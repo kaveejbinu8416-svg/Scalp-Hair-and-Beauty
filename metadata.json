@@ -1,0 +1,6 @@
+{
+  "name": "Scalp Hair and Beauty",
+  "description": "High-end hair salon & beauty parlor at 55 Kuruppu Rd, Colombo 00800 offering scalp treatments, hair styling, bridal dressing, and facials.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
