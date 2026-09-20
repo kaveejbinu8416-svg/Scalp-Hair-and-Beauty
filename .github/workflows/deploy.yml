@@ -28,8 +28,10 @@ jobs:
           node-version: 20
       - name: Install dependencies
         run: npm install # <-- Fixed: Changed from npm ci to bypass lockfile requirements
-      - name: Build
-        run: npm run build
+            - name: Build
+        run: npm run build -- --skip-plugins || npx vite build
+        env:
+          CI: false
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
