@@ -18,6 +18,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400;1,600&display=swap" rel="stylesheet">
     
+    <!-- Tailwind CSS Engine Play CDN -->
+    <script src="https://tailwindcss.com"></script>
+    
     <!-- Local Business Schema -->
     <script type="application/ld+json">
     {
@@ -47,7 +50,8 @@
   </head>
   <body class="bg-[#0c0d10] text-[#f2ede4] font-sans antialiased selection:bg-[#c6a87d]/30 selection:text-[#f8f5ef]">
     <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
+    
+    <!-- Fixed: Relative path dot added to make sure it routes properly to your repository folder -->
+    <script type="module" src="./src/main.tsx"></script>
   </body>
 </html>
-
