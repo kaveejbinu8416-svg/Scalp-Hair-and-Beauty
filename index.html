@@ -5,53 +5,143 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Scalp Hair and Beauty – Luxury Hair & Beauty Salon in Colombo</title>
     <meta name="description" content="Experience high-end hair treatments, specialized scalp therapies, bespoke styling & coloring, bridal dressing, and facials at 55 Kuruppu Rd, Colombo 00800." />
-    <meta property="og:title" content="Scalp Hair and Beauty – Luxury Hair & Beauty Salon in Colombo" />
-    <meta property="og:description" content="Experience high-end hair treatments, specialized scalp therapies, bespoke styling & coloring, bridal dressing, and facials at 55 Kuruppu Rd, Colombo 00800." />
-    <meta property="og:type" content="website" />
-    <meta property="og:site_name" content="Scalp Hair and Beauty" />
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Scalp Hair and Beauty – Luxury Salon in Colombo" />
-    <meta name="twitter:description" content="Hair Treatments, Scalp Therapies, Styling, Coloring & Bridal Services at 55 Kuruppu Rd, Colombo." />
     
     <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400;1,600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://googleapis.com">
+    <link rel="preconnect" href="https://gstatic.com" crossorigin>
+    <link href="https://googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400;1,600&display=swap" rel="stylesheet">
     
-    <!-- Tailwind CSS Engine Play CDN -->
+    <!-- Tailwind CSS Dynamic Play CDN -->
     <script src="https://tailwindcss.com"></script>
-    
-    <!-- Local Business Schema -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "HairSalon",
-      "name": "Scalp Hair and Beauty",
-      "image": "https://images.unsplash.com/photo-1560066984-138dadb4c035?q=80&w=1200&auto=format&fit=crop",
-      "telephone": "+94773158182",
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "55 Kuruppu Rd",
-        "addressLocality": "Colombo",
-        "postalCode": "00800",
-        "addressCountry": "LK"
-      },
-      "priceRange": "$$",
-      "openingHoursSpecification": [
-        {
-          "@type": "OpeningHoursSpecification",
-          "dayOfWeek": ["Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
-          "opens": "09:00",
-          "closes": "19:30"
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+              serif: ['"Cormorant Garamond"', '"Playfair Display"', 'serif'],
+            }
+          }
         }
-      ]
-    }
+      }
     </script>
-  </head>
-  <body class="bg-[#0c0d10] text-[#f2ede4] font-sans antialiased selection:bg-[#c6a87d]/30 selection:text-[#f8f5ef]">
-    <div id="root"></div>
     
-    <!-- Fixed: Relative path dot added to make sure it routes properly to your repository folder -->
-    <script type="module" src="./src/main.tsx"></script>
-  </body>
-</html>
+    <!-- Lucide Icons Vector Engine -->
+    <script src="https://unpkg.com"></script>
+  </head>
+  <body class="bg-[#0b0c0e] text-[#f2ede4] font-sans antialiased selection:bg-[#c6a87d]/30 selection:text-[#f8f5ef]">
+
+    <!-- 1. PERSISTENT ANNOUNCEMENT TOP BANNER -->
+    <div class="fixed top-0 left-0 right-0 z-50 bg-[#14151b]/95 border-b border-[#c6a87d]/35 text-[#f5efe6] shadow-md shadow-black/40 backdrop-blur-md">
+      <div class="max-w-7xl mx-auto px-4 py-2 flex items-center justify-between gap-4 text-xs sm:text-sm">
+        <div class="flex items-center gap-2 min-w-0">
+          <span class="inline-flex items-center gap-1 px-1.5 py-0.5 rounded-full text-[10px] font-bold uppercase bg-[#c6a87d]/20 text-[#dfca9f] border border-[#c6a87d]/40 shrink-0">
+            <span class="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse"></span> Live
+          </span>
+          <p class="truncate font-medium text-[#e4decb]">
+            <span class="font-bold text-white">WELCOME</span> to Scalp Hair and Beauty – Luxury Salon Colombo
+          </p>
+        </div>
+        <a href="https://wa.me" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-gradient-to-r from-[#d8b888] to-[#c6a87d] text-[#14151a] font-bold text-xs shadow-sm hover:brightness-110 transition-all">
+          <span>Make Booking</span> <i data-lucide="arrow-up-right" class="w-3 h-3"></i>
+        </a>
+      </div>
+    </div>
+
+    <div class="flex-1 flex flex-col pt-[38px]">
+      <!-- 2. NAVIGATION BAR -->
+      <header class="sticky top-0 z-40 bg-[#0c0d10]/95 backdrop-blur-lg border-b border-[#262833]/80 transition-all">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="flex items-center justify-between h-16 md:h-20">
+            <a href="#home" class="flex items-center gap-3">
+              <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-[#2a2b36] to-[#12131a] border border-[#c6a87d]/40 flex items-center justify-center text-[#dfca9f]">
+                <i data-lucide="scissors" class="w-5 h-5"></i>
+              </div>
+              <div class="flex flex-col">
+                <span class="font-serif text-xl font-bold tracking-wider text-[#f8f5ee]">SCALP</span>
+                <span class="text-[9px] tracking-[0.25em] uppercase text-[#a59f93] font-medium -mt-1">Hair & Beauty</span>
+              </div>
+            </a>
+            <nav class="hidden md:flex items-center space-x-6">
+              <a href="#home" class="text-sm font-medium text-[#cbc4b6] hover:text-[#dfca9f] transition-colors">Home</a>
+              <a href="#services" class="text-sm font-medium text-[#cbc4b6] hover:text-[#dfca9f] transition-colors">Services</a>
+              <a href="#about" class="text-sm font-medium text-[#cbc4b6] hover:text-[#dfca9f] transition-colors">About</a>
+              <a href="#contact" class="text-sm font-medium text-[#cbc4b6] hover:text-[#dfca9f] transition-colors">Contact</a>
+            </nav>
+            <div class="flex items-center gap-4">
+              <a href="tel:+94773158182" class="hidden sm:flex items-center gap-2 text-xs font-semibold text-[#c8bfb0] hover:text-[#dfca9f]">
+                <i data-lucide="phone" class="w-3.5 h-3.5 text-[#dfca9f]"></i> <span>+94 77 315 8182</span>
+              </a>
+              <a href="https://wa.me" target="_blank" class="px-4 py-2 rounded-lg bg-gradient-to-r from-[#c6a87d] to-[#deb887] text-[#0f1015] font-semibold text-sm shadow-md hover:brightness-105 transition-all">
+                Book Now
+              </a>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <main class="flex-1">
+        <!-- 3. HERO SECTION -->
+        <section id="home" class="relative min-h-[85vh] flex items-center justify-center py-16 overflow-hidden bg-[#0c0d10]">
+          <div class="absolute inset-0 pointer-events-none">
+            <div class="absolute top-1/4 left-1/2 -translate-x-1/2 w-[600px] h-[600px] bg-[#c6a87d]/5 rounded-full blur-[140px]" />
+          </div>
+          <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+            <div class="lg:col-span-7 space-y-6">
+              <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#1b1d24] border border-[#353949]/70 text-xs text-[#e6decb]">
+                <span class="text-amber-400 font-bold">★★★★★</span>
+                <span class="font-semibold text-white">Premier Luxury Studio</span>
+              </div>
+              <h1 class="text-4xl sm:text-5xl lg:text-6xl font-serif font-bold text-[#f7f4ed] leading-[1.15]">
+                Artistry in Hair Care & <br/>
+                <span class="italic font-normal text-transparent bg-clip-text bg-gradient-to-r from-[#dfca9f] to-[#c6a87d]">Bespoke Beauty</span>
+              </h1>
+              <p class="text-sm sm:text-base text-[#a59e91] max-w-xl leading-relaxed">
+                Colombo’s premier destination for specialized scalp therapies, couture hair coloring, bridal styling, and restorative treatments at <span class="text-[#dfca9f] font-medium">55 Kuruppu Rd, Colombo 00800</span>.
+              </p>
+              <div class="flex flex-wrap items-center gap-4 pt-2">
+                <a href="https://wa.me" class="px-6 py-3.5 rounded-xl bg-gradient-to-r from-[#c6a87d] to-[#deb887] text-[#121318] font-bold text-sm shadow-lg hover:brightness-105 transition-all">
+                  Book via WhatsApp
+                </a>
+                <a href="#services" class="px-5 py-3.5 rounded-xl bg-[#171922] text-[#eae4d5] font-semibold text-sm border border-[#2f3240] hover:border-[#c6a87d]/50 transition-all">
+                  Explore Menu
+                </a>
+              </div>
+            </div>
+            <div class="lg:col-span-5">
+              <div class="relative rounded-2xl overflow-hidden border border-[#2d303f] shadow-2xl">
+                <img src="https://unsplash.com" alt="Scalp Hair and Beauty Luxury Salon" class="w-full h-[400px] object-cover" />
+                <div class="absolute bottom-4 left-4 right-4 p-4 rounded-xl bg-[#12141c]/90 border border-[#2b2e3b]">
+                  <h4 class="text-sm font-semibold text-white">Scalp & Hair Therapy Studio</h4>
+                  <p class="text-xs text-[#c6a87d]">55 Kuruppu Rd, Colombo 00800</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- 4. SERVICES SECTION -->
+        <section id="services" class="py-20 bg-[#0e0f14] border-t border-[#1e2029]">
+          <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-12">
+              <h2 class="text-3xl sm:text-4xl font-serif font-bold text-white">Curated Salon Treatments</h2>
+              <p class="text-[#a59e91] text-sm mt-3">Experience customized formulation lines tailored for premium structural care.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+              <!-- Service 1 -->
+              <div class="bg-[#14161f] rounded-2xl border border-[#262936] p-6 flex flex-col justify-between hover:border-[#c6a87d]/50 transition-all">
+                <div>
+                  <span class="text-[#c6a87d] text-xs font-bold uppercase tracking-wider">Scalp Care</span>
+                  <h3 class="font-serif text-2xl font-bold text-white mt-1">Trichological Follicle Detox</h3>
+                  <p class="text-[#a49e91] text-sm mt-2">Deep cleansing treatment targeting oil blockages, dandruff crusting, and roots configuration.</p>
+                </div>
+                <div class="pt-6 flex items-center justify-between border-t border-[#1e202b] mt-4">
+                  <span class="text-lg font-bold text-[#dfca9f]">Premium Quality</span>
+                  <a href="https://wa.me" class="px-4 py-2 rounded-xl bg-[#c6a87d] text-[#121318] text-xs font-bold">Book Slot</a>
+                </div>
+              </div>
+              <!-- Service 2 -->
+              <div class="bg-[#14161f] rounded-2xl border border-[#262936] p-6 flex flex-col justify-between hover:border-[#c6a87d]/50 transition-all">
+                <div>
+                  <span class="text-[#c6a87d] text-xs font-bold uppercase tracking-wider">Color Artistry</span>
+                  <h3 class="font-serif text-2xl font-bold text-white mt-1">Dimensional French Balayage</h3>
